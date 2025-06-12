@@ -12,7 +12,6 @@ export const projectData = [
       "Product listing with images and descriptions",
       "Add to Cart functionality using localStorage",
       "Smooth animations and transitions",
-      "Deployed on Vercel"
     ],
   },
   {
@@ -45,7 +44,6 @@ export const projectData = [
       "Product listing with images and descriptions",
       "Add to Cart functionality using localStorage",
       "Smooth animations and transitions",
-      "Deployed on Vercel"
     ],
   },
   {
