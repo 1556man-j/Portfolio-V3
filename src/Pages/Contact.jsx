@@ -42,13 +42,19 @@ const ContactPage = () => {
       }
     });
 
-    try {
-      // Get form data
-      const form = e.target;
-      const formData = new FormData(form);
+   try {
+    const formBody = new URLSearchParams(formData).toString();
 
-      // Submit form
-      await form.submit();
+    const response = await fetch("https://formsubmit.co/awosojiemmanuel2019@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        Accept: "application/json",
+      },
+      body: formBody,
+    });
+
+    if (!response.ok) throw new Error("Network error");
 
       // Show success message
       Swal.fire({
@@ -131,14 +137,12 @@ const ContactPage = () => {
             </div>
 
             <form 
-              action="https://formsubmit.co/ekizulfarrachman@gmail.com"
-              method="POST"
               onSubmit={handleSubmit}
               className="space-y-6"
             >
               {/* FormSubmit Configuration */}
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="New message from your portfolio!"/>
+              <input type="hidden" name="_captcha" value="New message from your portfolio!"/>
 
               <div
                 data-aos="fade-up"

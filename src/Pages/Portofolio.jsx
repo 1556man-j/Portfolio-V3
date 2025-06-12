@@ -10,6 +10,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import CardProject from "../components/CardProject";
+import {projectData} from '../data/projectData'
 import TechStackIcon from "../components/TechStackIcon";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -134,27 +135,28 @@ export default function FullWidthTabs() {
 
   const fetchData = useCallback(async () => {
     try {
-      const projectCollection = collection(db, "projects");
+      // const projectCollection = collection(db, "projects");
       const certificateCollection = collection(db, "certificates");
 
-      const [projectSnapshot, certificateSnapshot] = await Promise.all([
-        getDocs(projectCollection),
-        getDocs(certificateCollection),
-      ]);
+      const certificateSnapshot = await getDocs(certificateCollection);
 
-      const projectData = projectSnapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-        TechStack: doc.data().TechStack || [],
-      }));
+
+      // const localProjects = projectData.map((project) => ({
+      //   id: project.id,
+      //   ...project,
+      //   TechStack: doc.data().TechStack || [],
+      // }));
 
       const certificateData = certificateSnapshot.docs.map((doc) => doc.data());
 
-      setProjects(projectData);
+      // setProjects(localProjects);
       setCertificates(certificateData);
+      setProjects(projectData);
+      localStorage.setItem("projects", JSON.stringify(projectData));
+
 
       // Store in localStorage
-      localStorage.setItem("projects", JSON.stringify(projectData));
+      // localStorage.setItem("projects", JSON.stringify(localProjects));
       localStorage.setItem("certificates", JSON.stringify(certificateData));
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -270,9 +272,11 @@ export default function FullWidthTabs() {
                 gap: "8px",
               },
             }}
-          >
+          > 
+
+          
             <Tab
-              icon={<Code className="mb-2 w-5 h-5 transition-all duration-300" />}
+              icon={<Boxes className="mb-2 w-5 h-5 transition-all duration-300" />}
               label="Projects"
               {...a11yProps(0)}
             />
