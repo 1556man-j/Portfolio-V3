@@ -105,15 +105,23 @@ const techStacks = [
   { icon: "html.svg", language: "HTML" },
   { icon: "css.svg", language: "CSS" },
   { icon: "javascript.svg", language: "JavaScript" },
+  { icon: "typescript.svg", language: "Typescript" },
   { icon: "tailwind.svg", language: "Tailwind CSS" },
-  { icon: "reactjs.svg", language: "ReactJS" },
-  { icon: "vite.svg", language: "Vite" },
-  { icon: "nodejs.svg", language: "Node JS" },
   { icon: "bootstrap.svg", language: "Bootstrap" },
-  { icon: "firebase.svg", language: "Firebase" },
+  { icon: "reactjs.svg", language: "ReactJS" },
+  { icon: "nodejs.svg", language: "Next JS" },
+  { icon: "angular.svg", language: "Angular" },
+  { icon: "svelte.png", language: "Sveltekit" },
+  { icon: "vite.svg", language: "Vite" },
+  { icon: "sass.svg", language: "SASS" },
   { icon: "MUI.svg", language: "Material UI" },
   { icon: "vercel.svg", language: "Vercel" },
   { icon: "SweetAlert.svg", language: "SweetAlert2" },
+  { icon: "git.svg", language: "Git" },
+  { icon: "github.svg", language: "Github" },
+  { icon: "jquery.svg", language: "JQuery" },
+  { icon: "terminal.png", language: "Command Line" },
+  { icon: "figma.svg", language: "Figma" },
 ];
 
 export default function FullWidthTabs() {
@@ -276,7 +284,7 @@ export default function FullWidthTabs() {
 
           
             <Tab
-              icon={<Boxes className="mb-2 w-5 h-5 transition-all duration-300" />}
+              icon={<Code className="mb-2 w-5 h-5 transition-all duration-300" />}
               label="Projects"
               {...a11yProps(0)}
             />

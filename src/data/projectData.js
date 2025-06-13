@@ -38,7 +38,7 @@ export const projectData = [
     Description: "Forever is a modern, responsive e-commerce platform I developed to redefine online shopping through innovation, simplicity, and reliability. Built with a user-first design approach, the platform allows customers to explore and purchase a wide range of high-quality products—from fashion and beauty to electronics and home essentials—seamlessly from any device. With smooth navigation, secure transactions, and fast-loading pages, Forever provides a shopping experience that is intuitive, efficient, and tailored to user preferences. I aimed to create not just a store, but a trusted digital destination for everyday shoppers.",
     Link: "https://clothing-man-j.vercel.app/",
     Github: "https://github.com/1556man-j/clothing",
-    TechStack: ["HTML", "CSS3/SCSS", "JavaScript"],
+    TechStack: ["HTML", "CSS3/SASS", "JavaScript"],
     Features: [
       "Fully optimized for desktop, tablet, and mobile devices.",
       "Product listing with images and descriptions",
@@ -53,7 +53,7 @@ export const projectData = [
     Description: "As the FrontEnd developer of the Faith-Hill Investment & Logistics website, I built a responsive, modern business site to represent a trusted Nigerian company specializing in investment, logistics, manufacturing, and distribution. The goal was to create an intuitive, visually appealing platform that clearly communicates the brand's services and values, while remaining fast and user-friendly across all devices.",
     Link: "https://faith-hillinvestment.com/",
     Github: "https://github.com/1556man-j/cravencrumble",
-    TechStack: ["HTML5", "CSS3/SCSS", "JavaScript"],
+    TechStack: ["HTML5", "CSS3/SASS", "JavaScript"],
     Features: [
       "Responsive layout for all devices",
       "Animated navigation and scroll transitions",
@@ -85,7 +85,7 @@ export const projectData = [
     Description: "ROOM-IE is a modern roommate-matching web application designed to help users find compatible roommates quickly and securely. Built with user experience in mind, the platform allows individuals to create detailed profiles, filter potential matches based on lifestyle preferences, budget, and location, and communicate securely through an in-app messaging system. Whether you're moving into a new city or looking for a better living arrangement, ROOM-IE simplifies the roommate search process with a seamless, step-by-step experience that ends with a customizable roommate agreement for mutual understanding and safety.",
     Link: "https://room-ie.netlify.app/",
     Github: "https://github.com/1556man-j/cravencrumble",
-    TechStack: ["HTML", "CSS3/SCSS", "JavaScript"],
+    TechStack: ["HTML", "CSS3/SASS", "JavaScript"],
     Features: [
       " Fully mobile-friendly design that works smoothly across all devices",
       "Roommate Agreement Template",
@@ -125,5 +125,67 @@ export const projectData = [
       "Clean CTA to onboard users with ease.",
       "Social proof from over 500 satisfied users."
     ],
+  },
+  {
+    id: "Portfolio_V1",
+    Img: "/assets/images/portfolio-v1.png",
+    Title: "Portfolio_V1",
+    Description: "This portfolio website marks the beginning of my journey as a front-end developer, created to serve as a personal space where I introduce myself, display my skills, and highlight projects I’ve worked on. Designed with a focus on clarity and responsiveness, it offers a simple yet modern user interface that works smoothly across devices. The site includes essential sections such as About Me, Skills, Projects, and Contact, all organized to reflect my passion for clean code, attention to detail, and a commitment to user experience. It was built and deployed using modern tools to ensure performance and accessibility, laying the foundation for my evolving presence in the tech space.",
+    Link: "https://awosojiemmanuel.vercel.app/",
+    Github: "https://github.com/1556man-j/awosojiemmanuel",
+    TechStack: ["React", "CSS3/SASS", "Bootstrap", "JavaScript"],
+    Features: [
+      " Smooth scroll and section transitions.",
+      "Step-by-step instructions with illustrations for proper form.",
+      "Project showcase section with basic details.",
+      "Minimal dependencies to ensure fast load times.",
+      "Clean and responsive design for mobile and desktop."
+    ],
+  },
+  {
+    id: "Portfolio_V2",
+    Img: "/assets/images/portfolio-v2.png",
+    Title: "Portfolio_V2",
+    Description: "This website is a modern fitness web/mobile app designed to simplify and supercharge users' workout journeys. As the developer, I built this platform to act like a virtual personal trainer—right in your pocket. With personalized workout plans, clear exercise explanations, progress analytics, and a motivating user interface, this app helps users stop overthinking and start moving. Built with scalability and performance in mind, it supports both beginners and seasoned athletes through intuitive design and responsive functionality.",
+    Link: "https://www.manj.name.ng/",
+    Github: "https://github.com/1556man-j/Portfolio-V3",
+    TechStack: ["React", "Tailwind CSS", "AOS", "Framer Motion", "Lucide", "Material UI", "SweetAlert2"],
+    Features: [
+      "Clean layout using Tailwind CSS and interactive transitions powered by Framer Motion.",
+      "Projects are loaded and displayed dynamically, making it easy to update and scale.",
+      "Elements such as icons and cards include animations to enhance visual engagement.",
+      "Meta tags and structured layout improve visibility in search engines.",
+      "Fully mobile-friendly, ensuring usability across devices."
+    ],
+  },
+  {
+    id: "Fitness",
+    Img: "/assets/images/fitness.png",
+    Title: "Fitness",
+    Description: "This fitness website showcases a well-structured and engaging platform aimed at promoting a healthy lifestyle through workout routines, inspirational visuals, and clean design. It reflects your ability to blend aesthetics with function—featuring smooth scrolling, animated elements, and a modern layout that guides visitors through sections like workouts, benefits, transformation stories, and call-to-action buttons. The design demonstrates the understanding of user-centered interfaces while also leveraging tools like React and Tailwind CSS to build a responsive, interactive experience.",
+    Link: "https://manj-fitness.vercel.app/",
+    Github: "https://github.com/1556man-j/fitness",
+    TechStack: ["React", "Tailwind CSS", "JavaScript"],
+    Features: [
+      "Bold introduction with strong call-to-action to motivate users.",
+      "Fully optimized for mobile and desktop viewing",
+      " Dedicated section for showcasing types of fitness training.",
+      "Use of clear fonts and Lucide icons for a sleek appearance.",
+    ],
+  },
+  {
+    id: "omelette",
+    Img: "/assets/images/omelette.png",
+    Title: "Omelette",
+    Description: "The Omelette Recipe Website at is a clean and minimal single-page web project that highlights my skills in UI development and semantic HTML structuring. It delivers a straightforward, visually appealing layout ideal for displaying cooking instructions, and is built with accessibility and responsive design in mind. The site reflects my ability to take a design concept—likely from a frontend challenge or component UI idea—and translate it into a functional, readable page with polished presentation.",
+    Link: "https://omelette-recipe-tau.vercel.app/",
+    Github: "https://github.com/1556man-j/Omelette-Recipe",
+    TechStack: ["React", "CSS3/SASS", "JavaScript"],
+    Features: [
+      "Focuses attention on the recipe without distractions.",
+      "Well-adjusted layout on different screen sizes, especially mobile.",
+      "Clear divisions for ingredients, preparation, and cooking instructions.",
+      " Optimized for speed and minimal resource use."         
+    ]
   },
 ];

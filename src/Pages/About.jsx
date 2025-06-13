@@ -1,5 +1,5 @@
 import React, { useEffect, memo, useMemo } from "react"
-import { FileText, Code, Award, Globe, ArrowUpRight, Sparkles, UserCheck } from "lucide-react"
+import { FileText, Code, Award, Globe, ArrowUpRight, Sparkles, UserCheck, Boxes } from "lucide-react"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -159,15 +159,15 @@ const AboutPage = () => {
     {
       icon: Code,
       color: "from-[#6366f1] to-[#a855f7]",
-      value: totalProjects,
+      value: totalProjects + "+",
       label: "Total Projects",
       description: "Innovative web solutions crafted",
       animation: "fade-right",
     },
     {
-      icon: Award,
+      icon: Boxes,
       color: "from-[#a855f7] to-[#6366f1]",
-      value: totalCertificates,
+      value: "20+",
       label: "Tech Stack",
       description: "Modern frameworks and tools powering development",
       animation: "fade-up",
@@ -175,7 +175,7 @@ const AboutPage = () => {
     {
       icon: Globe,
       color: "from-[#6366f1] to-[#a855f7]",
-      value: YearExperience,
+      value: YearExperience + "+",
       label: "Years of Experience",
       description: "Continuous learning journey",
       animation: "fade-left",
