@@ -1,7 +1,16 @@
-import React, { useEffect, memo, useMemo } from "react"
-import { FileText, Code, Award, Globe, ArrowUpRight, Sparkles, UserCheck, Boxes } from "lucide-react"
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import React, { useEffect, memo, useMemo } from "react";
+import {
+  FileText,
+  Code,
+  Award,
+  Globe,
+  ArrowUpRight,
+  Sparkles,
+  UserCheck,
+  Boxes,
+} from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Memoized Components
 const Header = memo(() => (
@@ -29,11 +38,7 @@ const Header = memo(() => (
 
 const ProfileImage = memo(() => (
   <div className="flex justify-end items-center sm:p-12 sm:py-0 sm:pb-0 p-0 py-2 pb-2">
-    <div
-      className="relative group"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-    >
+    <div className="relative group" data-aos="fade-up" data-aos-duration="1000">
       {/* Optimized gradient backgrounds with reduced complexity for mobile */}
       <div className="absolute -inset-6 opacity-[25%] z-0 hidden sm:block">
         <div className="absolute inset-0 bg-gradient-to-r from-violet-600 via-indigo-500 to-purple-600 rounded-full blur-2xl animate-spin-slower" />
@@ -68,65 +73,80 @@ const ProfileImage = memo(() => (
   </div>
 ));
 
-const StatCard = memo(({ icon: Icon, color, value, label, description, animation }) => (
-  <div data-aos={animation} data-aos-duration={1300} className="relative group">
-    <div className="relative z-10 bg-gray-900/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
-      <div className={`absolute -z-10 inset-0 bg-gradient-to-br ${color} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}></div>
+const StatCard = memo(
+  ({ icon: Icon, color, value, label, description, animation }) => (
+    <div
+      data-aos={animation}
+      data-aos-duration={1300}
+      className="relative group"
+    >
+      <div className="relative z-10 bg-gray-900/50 backdrop-blur-lg rounded-2xl p-6 border border-white/10 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl h-full flex flex-col justify-between">
+        <div
+          className={`absolute -z-10 inset-0 bg-gradient-to-br ${color} opacity-10 group-hover:opacity-20 transition-opacity duration-300`}
+        ></div>
 
-      <div className="flex items-center justify-between mb-4">
-        <div className="w-16 h-16 rounded-full flex items-center justify-center bg-white/10 transition-transform group-hover:rotate-6">
-          <Icon className="w-8 h-8 text-white" />
-        </div>
-        <span
-          className="text-4xl font-bold text-white"
-          data-aos="fade-up-left"
-          data-aos-duration="1500"
-          data-aos-anchor-placement="top-bottom"
-        >
-          {value}
-        </span>
-      </div>
-
-      <div>
-        <p
-          className="text-sm uppercase tracking-wider text-gray-300 mb-2"
-          data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-anchor-placement="top-bottom"
-        >
-          {label}
-        </p>
-        <div className="flex items-center justify-between">
-          <p
-            className="text-xs text-gray-400"
-            data-aos="fade-up"
-            data-aos-duration="1000"
+        <div className="flex items-center justify-between mb-4">
+          <div className="w-16 h-16 rounded-full flex items-center justify-center bg-white/10 transition-transform group-hover:rotate-6">
+            <Icon className="w-8 h-8 text-white" />
+          </div>
+          <span
+            className="text-4xl font-bold text-white"
+            data-aos="fade-up-left"
+            data-aos-duration="1500"
             data-aos-anchor-placement="top-bottom"
           >
-            {description}
+            {value}
+          </span>
+        </div>
+
+        <div>
+          <p
+            className="text-sm uppercase tracking-wider text-gray-300 mb-2"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-anchor-placement="top-bottom"
+          >
+            {label}
           </p>
-          <ArrowUpRight className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" />
+          <div className="flex items-center justify-between">
+            <p
+              className="text-xs text-gray-400"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+            >
+              {description}
+            </p>
+            <ArrowUpRight className="w-4 h-4 text-white/50 group-hover:text-white transition-colors" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-));
+  )
+);
 
 const AboutPage = () => {
   // Memoized calculations
   const { totalProjects, totalCertificates, YearExperience } = useMemo(() => {
     const storedProjects = JSON.parse(localStorage.getItem("projects") || "[]");
-    const storedCertificates = JSON.parse(localStorage.getItem("certificates") || "[]");
+    const storedCertificates = JSON.parse(
+      localStorage.getItem("certificates") || "[]"
+    );
 
     const startDate = new Date("2021-11-06");
     const today = new Date();
-    const experience = today.getFullYear() - startDate.getFullYear() -
-      (today < new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate()) ? 1 : 0);
+    const experience =
+      today.getFullYear() -
+      startDate.getFullYear() -
+      (today <
+      new Date(today.getFullYear(), startDate.getMonth(), startDate.getDate())
+        ? 1
+        : 0);
 
     return {
       totalProjects: storedProjects.length,
       totalCertificates: storedCertificates.length,
-      YearExperience: experience
+      YearExperience: experience,
     };
   }, []);
 
@@ -147,40 +167,43 @@ const AboutPage = () => {
       resizeTimer = setTimeout(initAOS, 250);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
       clearTimeout(resizeTimer);
     };
   }, []);
 
   // Memoized stats data
-  const statsData = useMemo(() => [
-    {
-      icon: Code,
-      color: "from-[#6366f1] to-[#a855f7]",
-      value: totalProjects + "+",
-      label: "Total Projects",
-      description: "Innovative web solutions crafted",
-      animation: "fade-right",
-    },
-    {
-      icon: Boxes,
-      color: "from-[#a855f7] to-[#6366f1]",
-      value: "20+",
-      label: "Tech Stack",
-      description: "Modern frameworks and tools powering development",
-      animation: "fade-up",
-    },
-    {
-      icon: Globe,
-      color: "from-[#6366f1] to-[#a855f7]",
-      value: YearExperience + "+",
-      label: "Years of Experience",
-      description: "Continuous learning journey",
-      animation: "fade-left",
-    },
-  ], [totalProjects, totalCertificates, YearExperience]);
+  const statsData = useMemo(
+    () => [
+      {
+        icon: Code,
+        color: "from-[#6366f1] to-[#a855f7]",
+        value: totalProjects + "+",
+        label: "Total Projects",
+        description: "Innovative web solutions crafted",
+        animation: "fade-right",
+      },
+      {
+        icon: Boxes,
+        color: "from-[#a855f7] to-[#6366f1]",
+        value: "20+",
+        label: "Tech Stack",
+        description: "Modern frameworks and tools powering development",
+        animation: "fade-up",
+      },
+      {
+        icon: Globe,
+        color: "from-[#6366f1] to-[#a855f7]",
+        value: YearExperience + "+",
+        label: "Years of Experience",
+        description: "Continuous learning journey",
+        animation: "fade-left",
+      },
+    ],
+    [totalProjects, totalCertificates, YearExperience]
+  );
 
   return (
     <div
@@ -214,11 +237,17 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-              I'm a passionate Front-End developer who loves creating smooth, interactive, and user-friendly experiences. I enjoy turning ideas into awesome digital solutions that look great and work even better!
+              I'm a passionate Front-End developer who loves creating smooth,
+              interactive, and user-friendly experiences. I enjoy turning ideas
+              into awesome digital solutions that look great and work even
+              better!
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="https://drive.google.com/file/d/1JDpLv696dkkGXZhO4qRcHFqFBhhkLjrx/view" className="w-full lg:w-auto">
+              <a
+                href="https://drive.google.com/file/d/1JDpLv696dkkGXZhO4qRcHFqFBhhkLjrx/view"
+                className="w-full lg:w-auto"
+              >
                 <button
                   data-aos="fade-up"
                   data-aos-duration="800"
@@ -253,11 +282,18 @@ const AboutPage = () => {
 
       <style jsx>{`
         @keyframes float {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-20px); }
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
         }
         @keyframes spin-slower {
-          to { transform: rotate(360deg); }
+          to {
+            transform: rotate(360deg);
+          }
         }
         .animate-bounce-slow {
           animation: bounce 3s infinite;

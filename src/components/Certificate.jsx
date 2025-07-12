@@ -1,197 +1,108 @@
-import React, { useState } from "react"
-import { Modal, IconButton, Box, Fade, Backdrop, Zoom, Typography } from "@mui/material"
-import CloseIcon from "@mui/icons-material/Close"
-import FullscreenIcon from "@mui/icons-material/Fullscreen"
+import React from "react";
+import User from "../assets/user.png";
+import User2 from "../assets/user2.png";
+import User3 from "../assets/user3.png";
+import User4 from "../assets/user4.png";
+import User5 from "../assets/user5.png";
+import User6 from "../assets/user6.png";
 
-const Certificate = ({ ImgSertif }) => {
-	const [open, setOpen] = useState(false)
+const testimonials = [
+  {
+    name: "Elona Mosco",
+    role: "Business Owner",
+    image: User,
+    feedback:
+      "I needed a modern and responsive website for my business, and Emmanuel delivered beyond my expectations. From the first meeting, he understood exactly what I was aiming for. He was professional, easy to communicate with, and incredibly attentive to detail. The final product not only looked amazing but functioned smoothly across all devices. I’ve received so many compliments from my customers. I’ll definitely work with him again in the future!",
+  },
+  {
+    name: "John Doe",
+    role: "Startup Founder",
+    image: User2,
+    feedback:
+      "We brought Emmanuel on board to help revamp our startup’s landing page. What we got was far more than a visual upgrade — it was a performance boost. His design sense is top-notch, and he knows how to convert ideas into clean, modern interfaces that just work. He also delivered everything ahead of schedule, and made every requested change with a smile. A true team player.",
+  },
+  {
+    name: "Grace Daniels",
+    role: "Fashion Brand Owner",
+    image: User3,
+    feedback:
+      "As a fashion entrepreneur, aesthetics are everything to me — and Emmanuel completely understood that. He designed my online store to reflect elegance, simplicity, and class. The layout, the responsiveness, and even the checkout flow were all on point. It was clear he put in effort beyond just the visuals. The site has improved customer experience and my sales have gone up significantly.",
+  },
+  {
+    name: "Musa Bello",
+    role: "Digital Marketer",
+    image: User4,
+    feedback:
+      "I’ve worked with many developers, but Emmanuel stands out for one simple reason: he listens. He understood our marketing goals and built a website that aligned with our brand message. His attention to SEO, mobile optimization, and UI/UX was impressive. Every section was built with intention. Our traffic has increased and bounce rate dropped significantly since the redesign.",
+  },
+  {
+    name: "Anita Jones",
+    role: "Photographer",
+    image: User5,
+    feedback:
+      "Emmanuel built my photography portfolio from scratch, and it is nothing short of stunning. The way the gallery loads, the transitions, and how my photos are displayed — everything looks and feels high-end. I especially love how the dark mode works seamlessly with my images. I’ve already recommended him to two colleagues.",
+  },
+  {
+    name: "Kelvin Wright",
+    role: "App Developer",
+    image: User6,
+    feedback:
+      "Emmanuel was brought in to design a frontend dashboard for one of our mobile applications. His knowledge of Tailwind CSS, responsiveness, and component structuring made our backend integration effortless. The UI was clean, minimal, and functional — just what we needed. He even documented reusable components for us!",
+  },
+  {
+    name: "Fatima Ahmed",
+    role: "NGO Coordinator",
+    image: User,
+    feedback:
+      "Our NGO needed a new website that was easy to update, visually engaging, and accessible. Emmanuel understood our mission and translated it beautifully into a site that our donors, volunteers, and partners love. He also made sure the site loaded fast even with heavy media, and trained our staff on basic updates. That level of support meant a lot to us.",
+  },
+  {
+    name: "Daniel Uche",
+    role: "Freelancer",
+    image: User,
+    feedback:
+      "I hired Emmanuel to help with my personal brand website, and he nailed it. The homepage is clean, the animations are subtle yet engaging, and the contact form works flawlessly. What stood out to me the most was how he prioritized accessibility and performance. The site loads incredibly fast and looks great on every device. I get client leads weekly now, all from the site he built.",
+  },
+];
 
-	const handleOpen = () => {
-		setOpen(true)
-	}
 
-	const handleClose = () => {
-		setOpen(false)
-	}
 
-	return (
-		<Box component="div" sx={{ width: "100%" }}>
-			{/* Thumbnail Container */}
-			<Box
-				className=""
-				sx={{
-					position: "relative",
-					overflow: "hidden",
-					borderRadius: 2,
-					boxShadow: "0 8px 16px rgba(0,0,0,0.1)",
-					transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-					"&:hover": {
-						transform: "translateY(-5px)",
-						boxShadow: "0 12px 24px rgba(0,0,0,0.2)",
-						"& .overlay": {
-							opacity: 1,
-						},
-						"& .hover-content": {
-							transform: "translate(-50%, -50%)",
-							opacity: 1,
-						},
-						"& .certificate-image": {
-							filter: "contrast(1.05) brightness(1) saturate(1.1)",
-						},
-					},
-				}}>
-				{/* Certificate Image with Initial Filter */}
-				<Box
-					sx={{
-						position: "relative",
-						"&::before": {
-							content: '""',
-							position: "absolute",
-							top: 0,
-							left: 0,
-							right: 0,
-							bottom: 0,
-							backgroundColor: "rgba(0, 0, 0, 0.1)",
-							zIndex: 1,
-						},
-					}}>
-					<img
-						className="certificate-image"
-						src={ImgSertif}
-						alt="Certificate"
-						style={{
-							width: "100%",
-							height: "auto",
-							display: "block",
-							objectFit: "cover",
-							filter: "contrast(1.10) brightness(0.9) saturate(1.1)",
-							transition: "filter 0.3s ease",
-						}}
-						onClick={handleOpen}
-					/>
-				</Box>
+const Certificate = () => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5 2xl:grid-cols-3 gap-4">
+      {testimonials.map((item, index) => (
+        <div
+          key={index}
+          className="text-white border border-white/15 rounded-2xl p-10 w-full gap-5 flex flex-col"
+        >
+          <div className="flex justify-between">
+            <div className="flex mt-auto">
+              <div className="w-[40px] h-[40px] rotate-90 rounded-md bg-gradient-to-tr from-gray-500 to-transparent clip-triangle"></div>
+              <div className="w-[40px] h-[40px] rotate-90 rounded-md bg-gradient-to-tr from-gray-500 to-transparent clip-triangle"></div>
+            </div>
+            <div>
+              <div className="relative w-[150px] h-[150px] overflow-hidden">
+                <div className="relative w-full h-full bg-gradient-to-tl from-gray-500 to-transparent rounded-bl-full origin-center overflow-hidden">
+                  <img
+                    src={item.image}
+                    alt="testifier"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
 
-				{/* Hover Overlay */}
-				<Box
-					className="overlay"
-					sx={{
-						position: "absolute",
-						top: 0,
-						left: 0,
-						right: 0,
-						bottom: 0,
-						opacity: 0,
-						transition: "all 0.3s ease",
-						cursor: "pointer",
-						zIndex: 2,
-					}}
-					onClick={handleOpen}>
-					{/* Hover Content */}
-					<Box
-						className="hover-content"
-						sx={{
-							position: "absolute",
-							top: "50%",
-							left: "50%",
-							transform: "translate(-50%, -60%)",
-							opacity: 0,
-							transition: "all 0.4s ease",
-							textAlign: "center",
-							width: "100%",
-							color: "white",
-						}}>
-						<FullscreenIcon
-							sx={{
-								fontSize: 40,
-								mb: 1,
-								filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.2))",
-							}}
-						/>
-						<Typography
-							variant="h6"
-							sx={{
-								fontWeight: 600,
-								textShadow: "0 2px 4px rgba(0,0,0,0.3)",
-							}}>
-							View Certificate
-						</Typography>
-					</Box>
-				</Box>
-			</Box>
+          <div>{item.feedback}</div>
 
-			{/* Modal */}
-			<Modal
-				open={open}
-				onClose={handleClose}
-				aria-labelledby="modal-modal-title"
-				aria-describedby="modal-modal-description"
-				BackdropComponent={Backdrop}
-				BackdropProps={{
-					timeout: 300,
-					sx: {
-						backgroundColor: "rgba(0, 0, 0, 0.9)",
-						backdropFilter: "blur(5px)",
-					},
-				}}
-				sx={{
-					display: "flex",
-					alignItems: "center",
-					justifyContent: "center",
-					margin: 0,
-					padding: 0,
-					"& .MuiBackdrop-root": {
-						backgroundColor: "rgba(0, 0, 0, 0.9)",
-					},
-				}}>
-				<Box
-					sx={{
-						position: "relative",
-						width: "auto",
-						maxWidth: "90vw",
-						maxHeight: "90vh",
-						m: 0,
-						p: 0,
-						outline: "none",
-						"&:focus": {
-							outline: "none",
-						},
-					}}>
-					{/* Close Button */}
-					<IconButton
-						onClick={handleClose}
-						sx={{
-							position: "absolute",
-							right: 16,
-							top: 16,
-							color: "white",
-							bgcolor: "rgba(0,0,0,0.6)",
-							zIndex: 1,
-							padding: 1,
-							"&:hover": {
-								bgcolor: "rgba(0,0,0,0.8)",
-								transform: "scale(1.1)",
-							},
-						}}
-						size="large">
-						<CloseIcon sx={{ fontSize: 24 }} />
-					</IconButton>
+          <div className="flex flex-col">
+            <h3>{item.name}</h3>
+            <p className="opacity-60">{item.role}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+    );
+};
 
-					{/* Modal Image */}
-					<img
-						src={ImgSertif}
-						alt="Certificate Full View"
-						style={{
-							display: "block",
-							maxWidth: "100%",
-							maxHeight: "90vh",
-							margin: "0 auto",
-							objectFit: "contain",
-						}}
-					/>
-				</Box>
-			</Modal>
-		</Box>
-	)
-}
-
-export default Certificate
+export default Certificate;
