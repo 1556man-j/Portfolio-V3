@@ -1,10 +1,10 @@
 import React from "react";
-import User from "../assets/user.png";
-import User2 from "../assets/user2.png";
-import User3 from "../assets/user3.png";
-import User4 from "../assets/user4.png";
-import User5 from "../assets/user5.png";
-import User6 from "../assets/user6.png";
+import User from "../assets/user.webp";
+import User2 from "../assets/user2.webp";
+import User3 from "../assets/user3.webp";
+import User4 from "../assets/user4.webp";
+import User5 from "../assets/user5.webp";
+import User6 from "../assets/user6.webp";
 
 const testimonials = [
   {

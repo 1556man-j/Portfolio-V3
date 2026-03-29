@@ -1,9 +1,61 @@
 export const projectData = [
   {
+    id: "Ezergallery",
+    Img: "/assets/images/ezergallery.webp",
+    Title: "Ezergallery",
+    Description:
+      "The Ezergallery Web Application is a fully responsive online platform designed to showcase and manage digital art and photography collections. It allows users to browse galleries, view high-quality images, and explore artwork seamlessly. Developed as a frontend project, it demonstrates my skills in modern web design, UI/UX structuring, and interactive frontend functionality. The platform emphasizes smooth navigation, elegant presentation, and an optimized interface for both desktop and mobile devices.",
+    Link: "https://ezergallery.com/",
+    Github: "https://github.com/1556man-j/Ezergallery",
+    TechStack: ["Svelte", "Tailwind CSS", "JavaScript", "Vite", "Sanity CMS"],
+    Features: [
+      "Responsive layout for all devices",
+      "Gallery listing with high-quality images and descriptions",
+      "Image zoom and lightbox preview functionality",
+      "Filter and search artworks by category or artist",
+      "Smooth animations and transitions for browsing",
+    ],
+  },
+  {
+    id: "Chopchop",
+    Img: "/assets/images/chopchop.webp",
+    Title: "Chopchop",
+    Description:
+      "The ChopChop Landing Page is a fully responsive web interface designed to showcase a modern food brand with a visually engaging and interactive experience. Built as a frontend project, it focuses on clean UI design, smooth animations, and intuitive layout structuring. The page delivers an appealing user experience through well-crafted visuals, fluid transitions, and a mobile-first approach optimized for all screen sizes.",
+    Link: "https://chopchop-demo.netlify.app/",
+    Github: "https://github.com/1556man-j/ChopChop",
+    TechStack: ["Svelte", "Tailwind CSS", "JavaScript", "Vite"],
+    Features: [
+      "Fully responsive design across all devices",
+      "Modern and visually appealing UI layout",
+      "Smooth animations and scroll-based transitions",
+      "Interactive sections with clean navigation flow",
+      "Optimized performance for fast loading experience",
+    ],
+  },
+  {
+    id: "Tehillah’s",
+    Img: "/assets/images/Tehillah’s.webp",
+    Title: "Tehillah’s",
+    Description:
+      "The Tehillahs Art Web Application is a fully responsive platform designed to showcase handcrafted Garri through a clean and visually engaging interface. It provides users with a seamless browsing experience to explore creative pieces, including illustrations and mixed media designs. Developed as a frontend project, it highlights my ability to build elegant UI layouts, structure content effectively, and deliver smooth user interactions across both mobile and desktop devices.",
+    Link: "https://tehillahs.vercel.app/",
+    Github: "https://github.com/1556man-j/Tehillah-s",
+    TechStack: ["Svelte", "Tailwind CSS", "JavaScript", "Vite"],
+    Features: [
+      "Fully responsive design across all devices",
+      "Clean and modern UI for showcasing artwork",
+      "Gallery-style layout for displaying creative pieces",
+      "Smooth animations and hover effects",
+      "Optimized layout for seamless user experience",
+    ],
+  },
+  {
     id: "car rental",
-    Img: "/assets/images/car-rental.png",
+    Img: "/assets/images/car-rental.webp",
     Title: "Car Rental",
-    Description: "The Car Rental Web Application is a fully responsive web platform built to simulate the experience of browsing, selecting, and renting vehicles online. It is a frontend project developed to demonstrate my capabilities in web design, UI/UX structure, and frontend logic implementation. The platform provides a smooth user experience, clean navigation, and a modern interface optimized for mobile and desktop devices.",
+    Description:
+      "The Car Rental Web Application is a fully responsive web platform built to simulate the experience of browsing, selecting, and renting vehicles online. It is a frontend project developed to demonstrate my capabilities in web design, UI/UX structure, and frontend logic implementation. The platform provides a smooth user experience, clean navigation, and a modern interface optimized for mobile and desktop devices.",
     Link: "https://car-rental-by-manj.netlify.app/",
     Github: "https://github.com/1556man-j/car-rental",
     TechStack: ["React", "Tailwind CSS", "JavaScript", "Vite"],
@@ -16,9 +68,10 @@ export const projectData = [
   },
   {
     id: "pastries store",
-    Img: "/assets/images/cravencrumble.png",
+    Img: "/assets/images/cravencrumble.webp",
     Title: "Cravencrumble",
-    Description: "Cravencrumble is a beautifully designed, responsive e-commerce platform dedicated to artisanal pastries and baked goods. Built with modern front-end technologies, it offers a seamless browsing experience where users can explore and view a curated selection of seasonal cookies, cakes, and treats. The site emphasizes clean typography, high-quality imagery, and intuitive navigation, providing a polished storefront feel. Though the checkout and cart features are simulated in this version, the application effectively demonstrates front-end craftsmanship, ready to be extended with real-world functionality such as authentication, backend integration, and payment processing.",
+    Description:
+      "Cravencrumble is a beautifully designed, responsive e-commerce platform dedicated to artisanal pastries and baked goods. Built with modern front-end technologies, it offers a seamless browsing experience where users can explore and view a curated selection of seasonal cookies, cakes, and treats. The site emphasizes clean typography, high-quality imagery, and intuitive navigation, providing a polished storefront feel. Though the checkout and cart features are simulated in this version, the application effectively demonstrates front-end craftsmanship, ready to be extended with real-world functionality such as authentication, backend integration, and payment processing.",
     Link: "https://cravencrumble.vercel.app/",
     Github: "https://github.com/1556man-j/svelte",
     TechStack: ["Tailwind CSS", "JavaScript(ES6+)", "Svelte"],
@@ -28,14 +81,15 @@ export const projectData = [
       "Responsive UI layout",
       "Interactive hover animations",
       "Simulated cart for UX",
-      "Themed via utility-first styling"
+      "Themed via utility-first styling",
     ],
   },
   {
     id: "FOEVER",
-    Img: "/assets/images/clothing.png",
+    Img: "/assets/images/clothing.webp",
     Title: "FOREVER",
-    Description: "Forever is a modern, responsive e-commerce platform I developed to redefine online shopping through innovation, simplicity, and reliability. Built with a user-first design approach, the platform allows customers to explore and purchase a wide range of high-quality products—from fashion and beauty to electronics and home essentials—seamlessly from any device. With smooth navigation, secure transactions, and fast-loading pages, Forever provides a shopping experience that is intuitive, efficient, and tailored to user preferences. I aimed to create not just a store, but a trusted digital destination for everyday shoppers.",
+    Description:
+      "Forever is a modern, responsive e-commerce platform I developed to redefine online shopping through innovation, simplicity, and reliability. Built with a user-first design approach, the platform allows customers to explore and purchase a wide range of high-quality products—from fashion and beauty to electronics and home essentials—seamlessly from any device. With smooth navigation, secure transactions, and fast-loading pages, Forever provides a shopping experience that is intuitive, efficient, and tailored to user preferences. I aimed to create not just a store, but a trusted digital destination for everyday shoppers.",
     Link: "https://clothing-man-j.vercel.app/",
     Github: "https://github.com/1556man-j/clothing",
     TechStack: ["HTML", "CSS3/SASS", "JavaScript"],
@@ -48,9 +102,10 @@ export const projectData = [
   },
   {
     id: "investment and logistics company",
-    Img: "/assets/images/faithhill.png",
+    Img: "/assets/images/faithhill.webp",
     Title: "Faith-hill Investment & Logistics Company",
-    Description: "As the FrontEnd developer of the Faith-Hill Investment & Logistics website, I built a responsive, modern business site to represent a trusted Nigerian company specializing in investment, logistics, manufacturing, and distribution. The goal was to create an intuitive, visually appealing platform that clearly communicates the brand's services and values, while remaining fast and user-friendly across all devices.",
+    Description:
+      "As the FrontEnd developer of the Faith-Hill Investment & Logistics website, I built a responsive, modern business site to represent a trusted Nigerian company specializing in investment, logistics, manufacturing, and distribution. The goal was to create an intuitive, visually appealing platform that clearly communicates the brand's services and values, while remaining fast and user-friendly across all devices.",
     Link: "https://faith-hillinvestment.com/",
     Github: "https://github.com/1556man-j/cravencrumble",
     TechStack: ["HTML5", "CSS3/SASS", "JavaScript"],
@@ -59,14 +114,15 @@ export const projectData = [
       "Animated navigation and scroll transitions",
       "Services section with clean icons and descriptions",
       "Contact and call-to-action elements for client engagement",
-      "Smooth loading performance and optimized assets"
+      "Smooth loading performance and optimized assets",
     ],
   },
   {
     id: "NGO website",
-    Img: "/assets/images/jaa-foundation.png",
+    Img: "/assets/images/jaa-foundation.webp",
     Title: "Joseph Alabi Adewoye Foundation",
-    Description: "I developed the official website for the Joseph Alabi Adewoye Foundation, a legally registered NGO based in Kwara State, Nigeria, dedicated to honoring the legacy of Mr. Joseph Alabi Adewoye through initiatives in education, culture, youth empowerment, and sustainable development. My goal was to create a visually engaging, responsive, and informative platform that communicates the foundation’s mission while offering easy access to information about its programs, trustees, and community impact. The site was built using HTML, CSS, and JavaScript, and deployed on Netlify for fast, secure, and scalable hosting.",
+    Description:
+      "I developed the official website for the Joseph Alabi Adewoye Foundation, a legally registered NGO based in Kwara State, Nigeria, dedicated to honoring the legacy of Mr. Joseph Alabi Adewoye through initiatives in education, culture, youth empowerment, and sustainable development. My goal was to create a visually engaging, responsive, and informative platform that communicates the foundation’s mission while offering easy access to information about its programs, trustees, and community impact. The site was built using HTML, CSS, and JavaScript, and deployed on Netlify for fast, secure, and scalable hosting.",
     Link: "https://jaa-foundation.vercel.app/",
     Github: "https://github.com/1556man-j/JAA-Foundation",
     TechStack: ["Svelte", "Tailwind CSS", "JavaScript"],
@@ -75,14 +131,15 @@ export const projectData = [
       "Sections for mission, vision, and focus areas",
       "Trustee and team presentation with dynamic layout",
       "Optimized for fast loading and clean visual hierarchy",
-      "Mobile-responsive layout for accessibility on all devices"
+      "Mobile-responsive layout for accessibility on all devices",
     ],
   },
   {
     id: "roomie",
-    Img: "/assets/images/room-ie.png",
+    Img: "/assets/images/room-ie.webp",
     Title: "ROOM-IE",
-    Description: "ROOM-IE is a modern roommate-matching web application designed to help users find compatible roommates quickly and securely. Built with user experience in mind, the platform allows individuals to create detailed profiles, filter potential matches based on lifestyle preferences, budget, and location, and communicate securely through an in-app messaging system. Whether you're moving into a new city or looking for a better living arrangement, ROOM-IE simplifies the roommate search process with a seamless, step-by-step experience that ends with a customizable roommate agreement for mutual understanding and safety.",
+    Description:
+      "ROOM-IE is a modern roommate-matching web application designed to help users find compatible roommates quickly and securely. Built with user experience in mind, the platform allows individuals to create detailed profiles, filter potential matches based on lifestyle preferences, budget, and location, and communicate securely through an in-app messaging system. Whether you're moving into a new city or looking for a better living arrangement, ROOM-IE simplifies the roommate search process with a seamless, step-by-step experience that ends with a customizable roommate agreement for mutual understanding and safety.",
     Link: "https://room-ie.netlify.app/",
     Github: "https://github.com/1556man-j/cravencrumble",
     TechStack: ["HTML", "CSS3/SASS", "JavaScript"],
@@ -91,14 +148,15 @@ export const projectData = [
       "Roommate Agreement Template",
       "Downloadable Mobile App Section",
       "Dedicated FAQ section to address common questions",
-      " Clean layout and intuitive navigation for a stress-free user experience"
+      " Clean layout and intuitive navigation for a stress-free user experience",
     ],
   },
   {
     id: "yaji",
-    Img: "/assets/images/yaji-site.png",
+    Img: "/assets/images/yaji-site.webp",
     Title: "yaji",
-    Description: "Yaji is a bold culinary brand I had the privilege of bringing to life through modern, responsive web development. Built to mirror the vibrant spirit of suya culture, the site delivers a seamless user experience where tradition meets innovation. With a visually rich interface, strong brand storytelling, and fast-loading pages, the platform invites users to explore Yaji’s unique food philosophy — a blend of heritage, heat, and contemporary flavor. More than just a food site, Yaji is an immersive celebration of culture and craving, coded for impact.",
+    Description:
+      "Yaji is a bold culinary brand I had the privilege of bringing to life through modern, responsive web development. Built to mirror the vibrant spirit of suya culture, the site delivers a seamless user experience where tradition meets innovation. With a visually rich interface, strong brand storytelling, and fast-loading pages, the platform invites users to explore Yaji’s unique food philosophy — a blend of heritage, heat, and contemporary flavor. More than just a food site, Yaji is an immersive celebration of culture and craving, coded for impact.",
     Link: "https://yaji-site.vercel.app/",
     Github: "https://github.com/1556man-j/yaji-site",
     TechStack: ["svelte", "Tailwind CSS", "JavaScript"],
@@ -107,14 +165,15 @@ export const projectData = [
       "Strong focus on brand identity and storytelling to convey the emotional and cultural roots of Yaji",
       "Fast load times, compressed assets, and lightweight scripts for a smooth user experience.",
       "Designed to accommodate future additions like online ordering, menu listings, and blog updates.",
-      "Proper use of meta tags, alt texts, and semantic HTML for better discoverability."
+      "Proper use of meta tags, alt texts, and semantic HTML for better discoverability.",
     ],
   },
   {
     id: "gymn",
-    Img: "/assets/images/gym.png",
+    Img: "/assets/images/gym.webp",
     Title: "Man Jesus Gym",
-    Description: "This website is a modern fitness web/mobile app designed to simplify and supercharge users' workout journeys. As the developer, I built this platform to act like a virtual personal trainer—right in your pocket. With personalized workout plans, clear exercise explanations, progress analytics, and a motivating user interface, this app helps users stop overthinking and start moving. Built with scalability and performance in mind, it supports both beginners and seasoned athletes through intuitive design and responsive functionality.",
+    Description:
+      "This website is a modern fitness web/mobile app designed to simplify and supercharge users' workout journeys. As the developer, I built this platform to act like a virtual personal trainer—right in your pocket. With personalized workout plans, clear exercise explanations, progress analytics, and a motivating user interface, this app helps users stop overthinking and start moving. Built with scalability and performance in mind, it supports both beginners and seasoned athletes through intuitive design and responsive functionality.",
     Link: "https://manjesus.vercel.app/",
     Github: "https://github.com/1556man-j/sax",
     TechStack: ["svelte", "Tailwind CSS", "JavaScript"],
@@ -123,14 +182,15 @@ export const projectData = [
       "Step-by-step instructions with illustrations for proper form.",
       "Works seamlessly on both phones and tablets.",
       "Clean CTA to onboard users with ease.",
-      "Social proof from over 500 satisfied users."
+      "Social proof from over 500 satisfied users.",
     ],
   },
   {
     id: "Portfolio_V1",
-    Img: "/assets/images/portfolio-v1.png",
+    Img: "/assets/images/portfolio-v1.webp",
     Title: "Portfolio_V1",
-    Description: "This portfolio website marks the beginning of my journey as a front-end developer, created to serve as a personal space where I introduce myself, display my skills, and highlight projects I’ve worked on. Designed with a focus on clarity and responsiveness, it offers a simple yet modern user interface that works smoothly across devices. The site includes essential sections such as About Me, Skills, Projects, and Contact, all organized to reflect my passion for clean code, attention to detail, and a commitment to user experience. It was built and deployed using modern tools to ensure performance and accessibility, laying the foundation for my evolving presence in the tech space.",
+    Description:
+      "This portfolio website marks the beginning of my journey as a front-end developer, created to serve as a personal space where I introduce myself, display my skills, and highlight projects I’ve worked on. Designed with a focus on clarity and responsiveness, it offers a simple yet modern user interface that works smoothly across devices. The site includes essential sections such as About Me, Skills, Projects, and Contact, all organized to reflect my passion for clean code, attention to detail, and a commitment to user experience. It was built and deployed using modern tools to ensure performance and accessibility, laying the foundation for my evolving presence in the tech space.",
     Link: "https://awosojiemmanuel.vercel.app/",
     Github: "https://github.com/1556man-j/awosojiemmanuel",
     TechStack: ["React", "CSS3/SASS", "Bootstrap", "JavaScript"],
@@ -139,30 +199,40 @@ export const projectData = [
       "Step-by-step instructions with illustrations for proper form.",
       "Project showcase section with basic details.",
       "Minimal dependencies to ensure fast load times.",
-      "Clean and responsive design for mobile and desktop."
+      "Clean and responsive design for mobile and desktop.",
     ],
   },
   {
     id: "Portfolio_V2",
-    Img: "/assets/images/portfolio-v2.png",
+    Img: "/assets/images/portfolio-v2.webp",
     Title: "Portfolio_V2",
-    Description: "This website is a modern fitness web/mobile app designed to simplify and supercharge users' workout journeys. As the developer, I built this platform to act like a virtual personal trainer—right in your pocket. With personalized workout plans, clear exercise explanations, progress analytics, and a motivating user interface, this app helps users stop overthinking and start moving. Built with scalability and performance in mind, it supports both beginners and seasoned athletes through intuitive design and responsive functionality.",
+    Description:
+      "This website is a modern fitness web/mobile app designed to simplify and supercharge users' workout journeys. As the developer, I built this platform to act like a virtual personal trainer—right in your pocket. With personalized workout plans, clear exercise explanations, progress analytics, and a motivating user interface, this app helps users stop overthinking and start moving. Built with scalability and performance in mind, it supports both beginners and seasoned athletes through intuitive design and responsive functionality.",
     Link: "https://www.manj.name.ng/",
     Github: "https://github.com/1556man-j/Portfolio-V3",
-    TechStack: ["React", "Tailwind CSS", "AOS", "Framer Motion", "Lucide", "Material UI", "SweetAlert2"],
+    TechStack: [
+      "React",
+      "Tailwind CSS",
+      "AOS",
+      "Framer Motion",
+      "Lucide",
+      "Material UI",
+      "SweetAlert2",
+    ],
     Features: [
       "Clean layout using Tailwind CSS and interactive transitions powered by Framer Motion.",
       "Projects are loaded and displayed dynamically, making it easy to update and scale.",
       "Elements such as icons and cards include animations to enhance visual engagement.",
       "Meta tags and structured layout improve visibility in search engines.",
-      "Fully mobile-friendly, ensuring usability across devices."
+      "Fully mobile-friendly, ensuring usability across devices.",
     ],
   },
   {
     id: "Fitness",
-    Img: "/assets/images/fitness.png",
+    Img: "/assets/images/fitness.webp",
     Title: "Fitness",
-    Description: "This fitness website showcases a well-structured and engaging platform aimed at promoting a healthy lifestyle through workout routines, inspirational visuals, and clean design. It reflects your ability to blend aesthetics with function—featuring smooth scrolling, animated elements, and a modern layout that guides visitors through sections like workouts, benefits, transformation stories, and call-to-action buttons. The design demonstrates the understanding of user-centered interfaces while also leveraging tools like React and Tailwind CSS to build a responsive, interactive experience.",
+    Description:
+      "This fitness website showcases a well-structured and engaging platform aimed at promoting a healthy lifestyle through workout routines, inspirational visuals, and clean design. It reflects your ability to blend aesthetics with function—featuring smooth scrolling, animated elements, and a modern layout that guides visitors through sections like workouts, benefits, transformation stories, and call-to-action buttons. The design demonstrates the understanding of user-centered interfaces while also leveraging tools like React and Tailwind CSS to build a responsive, interactive experience.",
     Link: "https://manj-fitness.vercel.app/",
     Github: "https://github.com/1556man-j/fitness",
     TechStack: ["React", "Tailwind CSS", "JavaScript"],
@@ -175,9 +245,10 @@ export const projectData = [
   },
   {
     id: "omelette",
-    Img: "/assets/images/omelette.png",
+    Img: "/assets/images/omelette.webp",
     Title: "Omelette",
-    Description: "The Omelette Recipe Website at is a clean and minimal single-page web project that highlights my skills in UI development and semantic HTML structuring. It delivers a straightforward, visually appealing layout ideal for displaying cooking instructions, and is built with accessibility and responsive design in mind. The site reflects my ability to take a design concept—likely from a frontend challenge or component UI idea—and translate it into a functional, readable page with polished presentation.",
+    Description:
+      "The Omelette Recipe Website at is a clean and minimal single-page web project that highlights my skills in UI development and semantic HTML structuring. It delivers a straightforward, visually appealing layout ideal for displaying cooking instructions, and is built with accessibility and responsive design in mind. The site reflects my ability to take a design concept—likely from a frontend challenge or component UI idea—and translate it into a functional, readable page with polished presentation.",
     Link: "https://omelette-recipe-tau.vercel.app/",
     Github: "https://github.com/1556man-j/Omelette-Recipe",
     TechStack: ["React", "CSS3/SASS", "JavaScript"],
@@ -185,7 +256,7 @@ export const projectData = [
       "Focuses attention on the recipe without distractions.",
       "Well-adjusted layout on different screen sizes, especially mobile.",
       "Clear divisions for ingredients, preparation, and cooking instructions.",
-      " Optimized for speed and minimal resource use."         
-    ]
+      " Optimized for speed and minimal resource use.",
+    ],
   },
 ];
